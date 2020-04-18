@@ -1,14 +1,16 @@
 <%- include('header')%>
     <form method="GET" action="/cotacao">
-        <div class="form-group">
-            <label for="cotacao">Cotação</label>
-            <input id="cotacao" name="cotacao" type="text" class="form-control" value="<%= cotacao%>" placeholder="Cotação do dolar">
+        <div class="container-sm">
+            <div class="form-group">
+                <label for="cotacao">Cotação</label>
+                <input id="cotacao" name="cotacao" type="text" class="form-control" value="<%= cotacao%>" placeholder="Cotação do dolar">
+            </div>
+            <div class="form-group">
+                <label for="metros">Quantidade</label>
+                <input name="quantidade" type="text" class="form-control" id="quantidade" placeholder="Quantidade de dolares">
+            </div>
+            <button class="btn btn-primary">Converter</button>
         </div>
-        <div class="form-group">
-            <label for="metros">Quantidade</label>
-            <input name="quantidade" type="text" class="form-control" id="quantidade" placeholder="Quantidade de dolares">
-        </div>
-        <button class="btn btn-primary">Converter</button>
     </form>
 
     <%- include('footer')%>
